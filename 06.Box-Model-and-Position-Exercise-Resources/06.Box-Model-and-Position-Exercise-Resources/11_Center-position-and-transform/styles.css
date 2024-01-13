@@ -1,0 +1,35 @@
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px solid #ccc;
+    box-shadow: 0px 0px 42px 5px rgba(0,0,0,0.75);
+    width: 450px;
+    
+}
+
+div:nth-child(even){
+
+    padding-left: 30px;
+    padding-bottom: 50px ;
+    padding-right: 50px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+button{
+    float: right;
+    
+    background-color: green;
+    width: 90px;
+    height: 30px;
+    border-color: green;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    
+}
+img{
+    width: 450px;
+}

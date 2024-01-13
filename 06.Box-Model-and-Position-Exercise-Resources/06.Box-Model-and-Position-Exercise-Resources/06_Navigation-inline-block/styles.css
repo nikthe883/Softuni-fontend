@@ -9,12 +9,9 @@ header h1{
 a{
     color: green;
     text-decoration: none;
-}
-button{
-    border: none;
-    background: none;
     padding: 15px;
 }
+
 body{
     font-family: Helvetica, sans-serif;
 }

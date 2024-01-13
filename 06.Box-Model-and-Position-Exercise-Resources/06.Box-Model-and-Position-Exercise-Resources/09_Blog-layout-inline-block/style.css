@@ -15,12 +15,16 @@ aside{
 div{
     
     display: inline-block;
-    width: 50%;
+    width: 60%;
     
 }
 body{
     background-color: rgb(238, 238, 238);
     color: rgb(51,51,51);
     font-family: Helvetica, sans-serif;
+}
+section{
+    width: 60%;
+
 }
 

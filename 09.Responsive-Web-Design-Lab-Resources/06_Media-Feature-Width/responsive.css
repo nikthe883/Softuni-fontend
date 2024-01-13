@@ -1,0 +1,19 @@
+@media (width: 360px) {
+    article {
+      color: red;
+    }
+  }
+  
+  /* Minimum width */
+  @media (min-width: 35rem) {
+    article {
+      background-color: yellow;
+    }
+  }
+  
+  /* Maximum width */
+  @media (max-width: 50rem) {
+    article {
+      border: 2px solid blue;
+    }
+  }

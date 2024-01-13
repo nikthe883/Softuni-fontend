@@ -1,0 +1,9 @@
+.card h2 {
+  font-size: 1em;
+}
+
+.card {
+  container-type: inline-size;
+  width: 300px;
+  height: 120px;
+}

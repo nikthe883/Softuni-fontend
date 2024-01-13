@@ -1,0 +1,16 @@
+section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+}
+article{
+    max-width: 20vw;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+p{
+    font-family:  Helvetica, sans-serif;
+    line-height: 1.5;
+}

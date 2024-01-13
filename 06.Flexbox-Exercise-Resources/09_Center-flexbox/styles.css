@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.card{
+    padding: 15px;
+    border: 0px solid #ccc;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 42px 5px rgba(0,0,0,0.75);
+    width: 450px;
+    
+}

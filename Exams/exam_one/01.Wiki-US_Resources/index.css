@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+body{
+    font-family: Agbalumo;
+}
+
+h1,h3{
+    text-align: center;
+}
+header{
+    background-color: rgb(213, 235, 234);
+}
+hr{
+    max-width: 95%;
+    margin-left: 1rem;
+    height: 2px;
+    background-color: black;
+
+}
+article{
+    display: flex;
+}
+div{
+    padding: 2rem;
+}
+.map_holder{
+    width: 30rem;
+    border: 2px solid black;
+    margin: 1rem;
+}
+img{
+    width: 30rem;
+}
+.facts{
+    background-color: rgb(213, 235, 234);
+}
+footer h1{
+    background-color: black;
+    color:white;
+    width: 40rem;
+    margin-bottom: 0rem;
+}

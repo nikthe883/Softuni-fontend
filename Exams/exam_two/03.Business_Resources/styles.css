@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.logo-img img{
+    width: 5%;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+
+}
+.background-img img{
+    width: 100%;
+    height: 40rem;
+}
+
+ul{
+    display: flex;
+    position: absolute;
+    top: 3rem;
+    right: 3rem
+}
+li, a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 0.5rem;
+
+}
+.title-main{
+
+    color:white;
+    max-width: 35%;
+    position: absolute;
+    top:10rem;
+    left:15rem;
+    
+}
+.title-h1{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    line-height: 0.7rem;
+}
+.title-p{
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+.bussiness{
+    font-family: sans-serif;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    gap: 2rem;
+    line-height: 1.5rem;
+}
+.bussiness h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+button{
+    font-family: serif;
+    margin-top: 2rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: 1px solid #b0825c;
+    color: #b0825c;
+    font-size: medium;
+}
+.sponsors, .partner{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5rem;
+}
+.sponsor-images1, .sponsor-images2{
+    width: 15%;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    padding: 2rem;
+    background-color: #dddddd;
+
+}
+.sponsors h1, .partner h1{
+    color: #b0825c;
+    font-family: sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+.sponsors p, .partner p{
+    font-family: serif;
+    text-align: center;
+}
+.sponsor-images2{
+    margin-left: 5rem;
+}
+.sponsor-images{
+    margin-top: 5rem;
+    margin-left: 30%
+}
+hr{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.bottom-wrapper{
+    background-color: black;
+}
+.bottom{
+    display: flex;
+    padding-left: 7rem;
+   
+    color: white;
+    font-family: sans-serif;
+    
+}
+.bottom-one{
+    padding: 5rem;
+}
+span{
+    
+    display: flex;
+    line-height: 1.5rem;
+}
+.bottom-hr{
+    margin-bottom: 1rem;
+    border: 1px solid #3a3a41;
+}
+.copyright{
+    font-family: sans-serif;
+    margin-left: 11rem;
+    color: white;
+    padding: 1rem;
+    
+}

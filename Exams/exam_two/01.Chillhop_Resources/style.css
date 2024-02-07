@@ -1,0 +1,40 @@
+main{
+    display: flex;
+    font-family:Helvetica, sans-serif;
+    line-height: 2rem;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: #1881b6;
+}
+img{
+    width: 20rem;
+    padding: 3rem;
+}
+.information-holder{
+    padding: 4rem;
+}
+h2{
+    padding-bottom: 1rem;
+}
+h1{
+    color: white;
+}
+p{
+    text-indent: 3rem;
+}
+button{
+    width: 9rem;
+    height: 2.5rem;
+    font-weight: 750;
+    border-radius: 7px;
+    margin-left: 7rem;
+    border: 1px solid black;
+    
+}
+.transperant-button{
+    background: transparent;
+}
+.fill-button{
+    background: #b6416d;
+    color: white;
+}

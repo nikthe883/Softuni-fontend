@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+body{
+    font-family: Ubuntu;
+    margin: 0;
+}
+header{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.heading{
+    display: flex;
+    
+}
+.heading h1{
+    border-right:2px solid grey ;
+    height: 2.1rem;
+    padding-right: 0.5rem;
+    margin-left: 3rem;
+}
+.heading span{
+    margin: 2rem;
+    color: grey;
+}
+ul{
+    display: flex;
+    margin-left: 34rem;
+
+}
+li{
+    margin-left: 2rem;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #ececec;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-left: 0.1rem;
+    color: grey;
+}
+li:hover{
+    background-color: #56dbb1;
+    color: black;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+
+
+}
+.article-text{
+    margin: -1rem;
+    text-align: center;
+    background-color: #56dbb1;
+    padding: 5rem;
+}
+.information{
+    background: #353434;
+}
+.inner-container{
+    display: flex;
+    padding: 10rem;
+}
+.icons-information{
+    text-align: center;
+    padding: 0.5rem;
+}
+i{
+    color: white;
+    background-color: #56dbb1;
+    padding: 1rem;
+}
+.icon-head{
+    color: white;
+}
+.icon-body{
+    color: grey;
+    line-height: 2rem;
+}
+.text-with-button{
+    padding: 3rem;
+    text-align: center;
+    line-height: 1rem;
+}
+.text-with-button h3{
+    color: grey;
+}
+button{
+    margin: 2rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: #974d1b;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+footer{
+    background-color: #1b9772;
+    text-align: center;
+    padding: 2rem;
+    color: #56dbb1;
+}
+.photograph{
+    color: white;
+}

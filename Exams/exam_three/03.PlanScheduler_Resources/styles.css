@@ -55,6 +55,7 @@ header button{
     
 }
 .button_fill{
+    margin-top: 3rem;
    width: 10rem;
    height: 3rem;
    border-radius: 10px;
@@ -77,4 +78,91 @@ header button{
 }
 .statistics-wrapper h3{
     padding-bottom: 1rem;
+}
+.blog-wrapper{
+    background: #d9d9d9;
+}
+.blog{
+    
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.blog img{
+    width: 30rem;
+}
+.blog div{
+    padding-left: 2rem;
+}
+.blog h3{
+    padding: 2rem 0;
+    font-weight: 300;
+}
+.blog h1{
+    padding-bottom: 3rem;
+}
+.blog p{
+    padding-bottom: 0.5rem;
+}
+.blog a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.prices{
+    display: flex;
+}
+.center{
+    width: 90%;
+    display: flex;
+}
+.left, .right{
+    width: 5%;
+    height: 40rem;
+    background-color: #f5f5f5;
+}
+.text-price{
+    width: 33%;
+    padding: 4rem 6rem;
+}
+.text-price h1{
+    padding-bottom: 4rem;
+}
+.plans{
+    width: 33%;
+    padding: 3rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 2rem;
+}
+.one{
+    background-color: #ff7c4c;
+    
+}
+.two{
+    background-color: black;
+    color: white;
+}
+.plans h3{
+    padding: 3rem;
+}
+.plans h1{
+    padding-bottom: 4rem;
+    font-weight: 200;
+    font-size: 70px;
+}
+.blank{
+    background-color: white;
+    color: black;
+}
+footer{
+    background-color: #d9d9d9;
+    height: 5rem;
+}
+i{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-left: 15rem;
 }

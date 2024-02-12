@@ -63,3 +63,18 @@ header button{
    background-color: black;
    font-size: 17px;
 }
+.statistics-wrapper{
+    display: flex;
+    text-align: center;
+}
+.statistics{
+    padding: 2rem;
+}
+.statistics-wrapper h1{
+    color: #ff7c4c;
+    font-size: 50px;
+    padding-bottom: 2rem;
+}
+.statistics-wrapper h3{
+    padding-bottom: 1rem;
+}

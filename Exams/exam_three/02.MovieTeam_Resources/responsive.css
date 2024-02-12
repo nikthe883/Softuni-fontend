@@ -3,6 +3,9 @@
         flex-direction: column;
         gap: 20px;
     }
+    .header-title h1{
+        font-size: 30px;
+    }
 
     header nav ul {
         display: flex;
@@ -10,85 +13,27 @@
         align-items: center;
         gap: 5px;
     }
+    .team-description-wrapper ul{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 1rem;
 
-    .header-title {
-        padding: 1em 0;
     }
-
-    .header-title h1 {
-        font-size: 36px;
+    .choose-us ul{
+        display: flex;
+        flex-direction: column;
     }
-
-    .header-title p {
-        font-size: 18px;
+    .choose-us li p{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 2rem;
     }
-
-    .about-us p:nth-child(3) {
-        width: 100%;
+    .blog-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-list .item{
+        margin:2rem;
     }
     
-    .team-description ul {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .team-description ul li {
-        width: calc(50% - 30px);
-    }
-
-    .team-description ul li img {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-    }
-
-    .team-description ul li p {
-        font-size: 12px;
-    }
-
-    .choose-us ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .choose-us ul li {
-        width: 60%;
-    }
-
-    .blog-news ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .blog-news ul .item{
-        width: 70%;
-        min-width: 340px;
-    }
-
-    .blog-news ul .item section {
-        width: 50%;
-    }
-
-    .blog-news .content {
-        padding: 0 1rem;
-    }
-
-    .blog-news .content h4 {
-        font-size: 14px;
-    }
-
-    .blog-news .content p {
-        font-size: 12px;
-    }
-
-    .blog-news ul .item .avatar {
-        width: inherit;
-    }
-
-    .blog-news ul .item .avatar img {
-        width: 100%;
-        height: 100%;
-    }
 }

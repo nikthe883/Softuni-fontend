@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: inter;
+}
+.background{
+    width: 100%;
+}
+article{
+    background-color: white;
+    width: 50%;
+    margin-left: 5rem;
+}
+.first{
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+
+}
+.second{
+    position: absolute;
+    top: 21rem;
+    left: 4rem;
+}
+h2{
+    padding-top: 1rem;
+}
+.icon_container{
+    font-size:50px;
+}
+.image_container img{
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.image_container{
+    padding: 0rem 2rem 2rem 1rem;
+}
+.content{
+    display: flex;
+    padding: 2rem 0rem 2rem 2rem;
+}
+.third{
+    width: 30%;
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+}
+.third .icon_container{
+    font-size: 80px;
+    padding: 3rem 1.5rem 3rem 1rem;
+}
+.third .text_container{
+    padding-left: 1.5rem;
+}
+.third p{
+    padding-right: 1.5rem;
+    padding-bottom: 5.5rem;
+}
+.article_footer{
+    display: flex;
+}
+.third .image_container{
+    padding: 1rem;
+}
+.third .image_container img{
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+}
+.third .name_container{
+    padding-top: 1.5rem;
+}
+hr{
+    width:90%;
+    margin:0 auto;
+    height: 1px;
+}

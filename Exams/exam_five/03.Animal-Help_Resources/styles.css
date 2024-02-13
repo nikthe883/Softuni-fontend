@@ -1,6 +1,8 @@
 
 body{
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 button{
     padding: 1rem 4rem 1rem 4rem;
@@ -55,4 +57,53 @@ header span{
 }
 .one-image-container img{
     width: 30rem;
+    
 }
+.two{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.two .heading{
+    font-weight: 700;
+    font-size: 25px;
+}
+.two .heading-info{
+    font-weight: 600;
+    font-size: 20px;
+    width: 33%;
+    margin-left: 33%;
+    margin-bottom: 3rem;
+}
+i{
+    font-size: 150px;
+    color: #85dcff;
+}
+.container-two-info{
+    width: 30%;
+    margin-left: 5%;
+}
+.container-two{
+    display: flex;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #85dcff;
+    align-items: center;
+    justify-content: center;
+   
+}
+.three h1{
+    text-align: center;
+}
+.three ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem 25rem 5rem 25rem;
+}
+.three li::marker{
+    font-size: 50px;
+}
+

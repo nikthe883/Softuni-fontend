@@ -1,0 +1,23 @@
+@media screen and (max-width:600px){
+    .navigation-nav, .home-text, .home-image-container{
+        display: none;
+    }
+    .home-tab-selector-cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-text-container{
+        margin-top: 1rem;
+    }
+    .home-top-part{
+        flex-direction: column;
+   
+    }
+    .home-links-container{
+        flex-direction: column;
+  
+    }
+    .home-subscribe-container{
+        width: 100%;
+    }
+}

@@ -56,15 +56,14 @@ nav li{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 .two-one{
     display: flex;
     width: 25rem;
     
 }
-.two-one:first-of-type{
 
-}
 
 .text-container{
     text-align: center;
@@ -78,7 +77,151 @@ nav li{
 .vl {
     border-left: 2px solid grey;
     height: 13rem;
-
-    
   }
+.three{
+    display: flex;
+    margin-top: 4rem;
+    background-color: #ade2df;
+}
+.three-photo{
+    border: 1px dashed grey;
+    margin-left: 15rem;
+    margin-right: 5rem;
 
+
+}
+.three-info{
+    width: 40%;
+    line-height: 1.5rem;
+}
+.three-info h1{
+    font-size: 50px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.three-info h4{
+    padding-bottom: 1rem;
+}
+.three-info p{
+    padding-bottom: 2rem;
+}
+.three-info a{
+    color: black;
+    text-underline-offset: 5px;
+}
+.four{
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.four button{
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.four h1{
+    font-size: 50px;
+}
+.five{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.plans{
+    display: flex;
+    width: 60%;
+}
+.standart{
+    display: flex;
+    width: 33%;
+    line-height: 1.5rem;
+}
+.standart hr{
+    width: 90%;
+    margin-bottom: 2rem;
+    color: grey;
+}
+.plan-container{
+    margin-left: 2rem;
+}
+.plan-container h3{
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+.plan-container h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+span{
+    display: block;
+    font-weight: 500;
+}
+span:last-of-type{
+    margin-bottom: 3rem;
+}
+.plan-container button{
+    width: 80%;
+    height: 15%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.standart .vl{
+    height: 26.5rem;
+    margin-top: 1rem;
+    color: #dbdbdb;
+}
+.expand{
+    width: 39%;
+    background-color: #ade2df;
+    padding: 0rem 2rem 2rem 2rem;
+}
+.expand h3{
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+.expand h2{
+    padding: 0rem 0rem 2rem 0rem;
+    font-weight: 500;
+}
+.expand span{
+    line-height: 1.5rem;
+}
+.expand button{
+    margin-top: 8rem;
+    width: 90%;
+    margin-left: 2rem;
+    height: 5rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+.four-five-container{
+    background-color: #f3f5fa;
+    padding-bottom: 4rem;
+}
+.six{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.six-container{
+    width: 40%;
+}
+footer{
+    height: 2rem;
+    display: flex;
+}
+footer span{
+    padding: 2rem 0rem 2rem 0rem;
+}
+.socials{
+    margin-left: 80rem;
+    font-size: 15px;
+    padding: 2rem 0rem 2rem 0rem;
+}
+.socials i{
+    padding-left: 1rem;
+}

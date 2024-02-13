@@ -211,16 +211,16 @@ span:last-of-type{
     width: 40%;
 }
 footer{
-    height: 2rem;
+    height: 3rem;
     display: flex;
 }
 footer span{
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 1rem 0rem 1rem 1rem;
 }
 .socials{
     margin-left: 80rem;
     font-size: 15px;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 .socials i{
     padding-left: 1rem;

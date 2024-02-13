@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+body{
+    font-family: "inter";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+article{
+    width: 25%;
+    position: absolute;
+    top: 5rem;
+    left: 10%;
+    background-color: white;
+    display: flex;
+}
+.container{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+.heading{
+    font-size: 50px;
+    font-weight: 700;
+}
+.small{
+    font-weight: 300;
+    font-size: 15px;
+}
+div span{
+   display: block;
+   line-height: 2rem;
+}
+.span-heading{
+    display: flex;
+}
+
+div{
+    margin-bottom: 2rem;
+}
+button{
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+.two{
+    left: 37%;
+    top: 3rem;
+    
+}
+.two button{
+    margin-top: 5rem;
+}
+.three{
+    left: 64%;
+}

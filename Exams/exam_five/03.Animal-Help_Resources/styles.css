@@ -2,3 +2,57 @@
 body{
     font-family: Arial, sans-serif;
 }
+button{
+    padding: 1rem 4rem 1rem 4rem;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: white;
+}
+.fill{
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 2rem;
+}
+header ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 50rem;
+    margin-top: 1rem;
+}
+header li{
+    padding-left: 2rem;
+}
+header span{
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+.one{
+    background-color: #85dcff;
+    display: flex;
+}
+.one-text-container h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.one-text-container{
+    width: 35%;
+    line-height: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.one-text-container button{
+    margin-top: 2rem;
+}
+.one-text-container button:last-of-type{
+    margin-left: 4rem;
+}
+.one-image-container img{
+    width: 30rem;
+}

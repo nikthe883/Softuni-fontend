@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+button{
+    padding: 0.7rem 1rem 0.7rem 1rem;
+
+    border-radius: 7px;
+    border: 0px;
+    background-color: white;
+}
+header{
+    display: flex;
+    margin-bottom: 2rem;
+}
+nav ul{
+    display: flex;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+nav li{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 2rem;
+}
+.login{
+    padding-top: 2rem;
+    margin-left: 60rem;
+}
+.fill-color{
+    background-color: #ade2df;
+}
+.fill-color-black{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin-left: 0.5rem;
+}
+.one{
+    text-align: center;
+    background-color: #ade2df;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.one h1{
+    font-size: 60px;
+    margin: 2rem;
+}
+.one p{
+    padding-bottom: 2rem;
+}
+.two{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.two-one{
+    display: flex;
+    width: 25rem;
+    
+}
+.two-one:first-of-type{
+
+}
+
+.text-container{
+    text-align: center;
+    padding: 1rem;
+}
+.text-container h1{
+    padding-bottom: 2rem;
+    font-size: 40px;
+    font-weight: 500;
+}
+.vl {
+    border-left: 2px solid grey;
+    height: 13rem;
+
+    
+  }
+

@@ -106,4 +106,91 @@ i{
 .three li::marker{
     font-size: 50px;
 }
+.four-header{
+    text-align: center;
+}
+.four-header h1{
+    font-size: 40px;
+    font-weight: 700px;
+}
+.four-header h3{
+    font-weight: 300;
+}
+.four-image-holder{
+    display: flex;
 
+}
+.four-image-holder img{
+    width: 24rem;
+    padding-left: 1rem;
+}
+.four-image-holder img:first-of-type{
+    padding-left: 2.5rem;
+}
+.four h2{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 30px;
+}
+.four-content{
+    line-height: 1.5rem;
+    margin: 3rem 10rem 3rem 10rem ;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.four-content p{
+    padding: 1rem;
+}
+.four-content h3{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    padding: 1rem;
+    background-color: #85dcff;
+}
+.five{
+    display: flex;
+    margin-top: 6rem;
+}
+.five-image-holder img{
+    width: 45rem;
+}
+.five-image-holder{
+    
+    margin-right: 10rem;
+}
+.five-text-holder{
+    line-height: 1.5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.five-text-holder p{
+    margin-bottom: 2rem;
+}
+input{
+    width: 5rem;
+    padding: 0.5rem 10rem 0.5rem 0rem;
+    font-size: 20px;
+    
+}
+.five button{
+    width: 12rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+footer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+footer i{
+    font-size: 30px;
+    color: black;
+    padding-left: 1rem;
+}
+footer span{
+    margin-left: 80rem;
+}

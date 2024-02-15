@@ -5,8 +5,11 @@
     }
     .game-world-header{
         padding-top: 2rem;
+        max-width: 100%;
     }
-
+    .placeholder{
+        width: 100%;
+    }
     .tm-header-inner img{
         width: 20%;
     }

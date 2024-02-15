@@ -57,10 +57,11 @@
         max-width: 70%;
         margin-left: 15%;
     }
-    .blog-title h4 {
+    .blog h4 {
         font-size: 5px;
+        color: red;
     }
-    .about-blog{
-        min-width: 100rem;
+    #about-blog{
+        min-width: 100%;
     }
 }

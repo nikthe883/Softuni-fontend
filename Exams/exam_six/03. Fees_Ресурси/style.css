@@ -1,3 +1,5 @@
+
+
 header{
     display: flex;
 }
@@ -10,4 +12,72 @@ nav ul li{
 }
 nav{
     margin-left: 65rem;
+}
+.bg_color{
+    background-color: #54546d;
+    height: 20rem;
+}
+.post{
+    width: 25rem;
+    margin-left: 10rem;
+    background-color: white;
+    top: 12rem;
+    position: absolute;
+    border-radius: 10px;
+}
+.one{
+    left:29rem;
+}
+.two{
+    left: 58rem;
+}
+.head_text{
+    text-align: center;
+
+}
+.head_text div{
+    padding: 3rem;
+    line-height: 0.2rem;
+}
+button{
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: #9a5dc6;
+    color: white;
+}
+.foot_text{
+    text-align: center;
+    color: white;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: -1rem;
+    background: -webkit-linear-gradient(left, #0ea447, #74e69f);
+}
+.one{
+    margin-bottom: 20rem;
+}
+.two_article{
+    max-width: 60%;
+    margin-left: 20%;
+}
+.two_table{
+    display:flex;
+    gap:5rem;
+}
+.two_table_div:nth-child(2){
+    background-color: red;
+}
+.two_article_images{
+    padding-top: 1rem;
+}
+.two_table_div div{
+    padding-bottom: 1rem;
+}
+.two_article_images div img{
+
+    padding-left: 10rem;
+    padding-bottom: 1rem;
 }

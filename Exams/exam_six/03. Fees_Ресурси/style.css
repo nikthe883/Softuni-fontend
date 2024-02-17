@@ -67,10 +67,10 @@ button{
     display:flex;
     gap:5rem;
 }
-.two_table_div:nth-child(2){
-    background-color: red;
+.two_table{
+    padding-left: 1rem;
 }
-.two_article_images{
+.two_article_images div{
     padding-top: 1rem;
 }
 .two_table_div div{
@@ -80,4 +80,10 @@ button{
 
     padding-left: 10rem;
     padding-bottom: 1rem;
+}
+.two_table:nth-child(odd){
+    background-color: #e6e6e6;
+}
+.two_table:nth-child(even){
+    background-color: #f8f8f8;
 }

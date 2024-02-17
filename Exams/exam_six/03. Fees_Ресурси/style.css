@@ -1,0 +1,13 @@
+header{
+    display: flex;
+}
+.logo img{
+    width: 10rem;
+}
+nav ul li{
+    display: inline-block;
+    padding-left: 1rem;
+}
+nav{
+    margin-left: 65rem;
+}

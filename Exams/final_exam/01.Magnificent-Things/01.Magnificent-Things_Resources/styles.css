@@ -14,6 +14,7 @@ main{
 .picture-layout img{
     width: 33rem;
     object-fit: contain;
+    box-shadow: 6px 6px 10px 3px rgba(0,0,0,0.76);
 }
 .text-layout h1{
     font-size: 60px;

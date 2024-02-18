@@ -1,4 +1,5 @@
 @media only screen and (max-width: 600px) {
+    
     header{
         height: 26rem;
     }
@@ -29,7 +30,7 @@
         justify-content: center;
     }
     .choose-us ul li{
-        width: 70%;
+        width: 64%;
         margin-bottom: 2rem;
     }
     .choose-us p{
@@ -47,4 +48,8 @@
         width: 70%;
         height: 24rem;
     }
+    .team-description-wrapper li{
+        max-height: 17rem;
+    }
+
   }

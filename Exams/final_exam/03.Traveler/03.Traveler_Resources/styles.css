@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+
+:root{
+    --karla-font: "Karla";
+    --karla-font-size: 18px;
+    --cormorant-font: "Cormorant Infant";
+    --cormorant-font-size-big: 90px;
+    --cormorant-font-size-small:16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: white;
+    margin-bottom: 12rem;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("images/poster.jpg") no-repeat;
+    background-size: cover;
+    filter: brightness(0.7); /* Adjust the value between 0 and 1 to control darkness */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+.logo-img img{
+    width: 8rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+.header-top{
+    display: flex;
+}
+nav ul{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+    margin-top: 3.5rem;
+    margin-left: 55rem;
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 3rem;
+}
+.header-text{
+    margin-top: 20rem;
+    text-align: center;
+}
+.header-text h1{
+    font-family: var(--cormorant-font);
+    font-size: var(--cormorant-font-size-big);
+    margin-bottom: 10rem;
+}
+.header-text p{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+}
+.one{
+    width: 80%;
+    margin-left: 10%;
+}
+.one h1{
+    font-family: var(--cormorant-font);
+    font-size: var(--cormorant-font-size-big);
+    line-height: 5rem;
+    font-style: italic;
+    margin-bottom: 7rem;
+}
+.one p{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+    margin-bottom: 4rem;
+}
+.two{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+    text-align: center;
+    background-color: #e14747;
+    padding: 5rem;
+    color: white;
+}
+.two h1{
+    margin-bottom: 3rem;
+}
+.three{
+    padding: 5rem;
+    background-color: #f8f0e9;
+}
+.three-wrapper{
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.three-image-holder img{
+    width: 100%;
+}
+.three-text-holder h1{
+    text-align: center;
+    font-family: var(--cormorant-font);
+    font-size: var(--cormorant-font-size-big);
+    padding: 5rem 2rem;
+}
+.three-text-holder p{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+}
+.button-article-three{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5rem;
+}
+.read-all{
+    margin-left: 38%;
+}
+.four{
+    text-align: center;
+    background-color: #e14747;
+    color: white;
+    padding-bottom: 6rem;
+}
+.four h1{
+    padding: 8rem;
+    font-family: var(--cormorant-font);
+    font-size: var(--cormorant-font-size-big);
+}
+.four p{
+    padding: 0 25rem 8rem;
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+}
+.button-article-four{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+    background-color: #fad87a;
+    color: black;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+}
+footer{
+    background-color: #352b2a;
+    color: white;
+    padding-left: 8rem;
+    padding-bottom: 4rem;
+}
+footer img{
+    width: 6rem;
+    margin-top: 3rem;
+    
+}
+footer p:first-of-type{
+    font-family: var(--karla-font);
+    font-size: var(--karla-font-size);
+    padding: 4rem 0rem 2rem 0rem;
+    width: 32rem;
+}
+footer p:last-of-type{
+    color: #74625a;
+    font-family: var(--cormorant-font);
+    font-size: var(--cormorant-font-size-small);
+
+}

@@ -11,6 +11,8 @@ function solve(numOne,numTwo,numThree){
     if (Math.sign(numThree) == -1){
         sum += 1
     }
+   
+    
     
     if (sum === 3 || sum === 1){
         console.log("Negative")

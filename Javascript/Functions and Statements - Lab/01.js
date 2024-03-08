@@ -9,6 +9,7 @@ function solve(grade){
     }else if(grade >=4.50 && grade < 5.50){
         console.log(`Very good (${grade.toFixed(2)})`)
     }else{
+        
         console.log(`Excellent (${grade.toFixed(2)})`)
     }
     

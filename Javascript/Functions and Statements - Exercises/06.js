@@ -12,13 +12,14 @@ function solve(pass){
     if (onlyLettersAndNumbers(pass) && numbersBetweenSixAndTen(pass) && AtLeastTwoDigits(pass)){
         console.log('Password is valid')
     }
-    if (!onlyLettersAndNumbers(pass)){
-        console.log("Password must consist only of letters and digits")
-    }
     if (!numbersBetweenSixAndTen(pass)){
 
         console.log('Password must be between 6 and 10 characters')
     }
+    if (!onlyLettersAndNumbers(pass)){
+        console.log("Password must consist only of letters and digits")
+    }
+
     if (!AtLeastTwoDigits(pass)){
         console.log("Password must have at least 2 digits")
     }

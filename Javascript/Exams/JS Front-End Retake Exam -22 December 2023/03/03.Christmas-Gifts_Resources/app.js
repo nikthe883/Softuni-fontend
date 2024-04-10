@@ -172,6 +172,8 @@ function editTaskEventHandler(ev) {
 }
 
 
+
+
 function deleteTask(taskLoacation) {
     getIdByGift(taskLoacation)
         .then((id) =>

@@ -1,205 +1,140 @@
-const BASE_URL = 'http://localhost:3030/jsonstore/gifts';
+    const baseURL = 'http://localhost:3030/jsonstore/tasks';
 
-const endpoints = {
-    update: (id) => `${BASE_URL}/${id}`,
-    delete: (id) => `${BASE_URL}/${id}`,
-};
+    const foodInput = document.getElementById('food');
+    const timeInput = document.getElementById('time');
+    const caloriesInput = document.getElementById('calories');
+    const addMealBtn = document.getElementById('add-meal');
+    const editMealBtn = document.getElementById('edit-meal');
+    const loadMealsBtn = document.getElementById('load-meals');
+    const listDiv = document.getElementById('list');
 
-const giftElement = document.getElementById("gift");
-const priceElement = document.getElementById("price");
-const forElement = document.getElementById("for");
+    let editId = null;
 
-const presentsList = document.getElementById("presents");
-const list = document.getElementById('gift-list');
+    loadMealsBtn.addEventListener('click', loadMeals);
+    addMealBtn.addEventListener('click', addMeal);
+    editMealBtn.addEventListener('click', editMeal);
 
-const addBtn = document.getElementById("add-present");
-const editBtn = document.getElementById("edit-present");
-const loadBtn = document.getElementById("load-presents");
-const clearBtn = document.querySelector(".clear-btn");
+    async function loadMeals() {
 
-let selectedTaskId = null;
+        const response = await fetch(baseURL);
+        const data = await response.json();
+        listDiv.innerHTML = '';
+        Object.values(data).forEach(meal => addMealToDOM(meal));
 
-function attachEvents() {
-    loadBtn.addEventListener('click', loadBoardEventHandler);
-    addBtn.addEventListener('click', createTaskEventHandler);
-    editBtn.addEventListener('click', editTaskEventHandler);
-}
-
-function getIdByGift(gift) {
-    return fetch(BASE_URL)
-        .then(res => res.json())
-        .then(res => Object.entries(res).find(e => e[1].gift == gift)[1]._id);
-}
-
-async function loadBoardEventHandler() {
-    clearAllSections();
-    try {
-        const res = await fetch(BASE_URL);
-        const allGifts = await res.json();
-        Object.values(allGifts).forEach((gift) => {
-            const container = document.createElement('div');
-            container.className = 'gift-sock';
-
-            const content = document.createElement('div');
-            content.className = 'content';
-
-            const figtElement = document.createElement('p');
-            figtElement.textContent = gift.gift;
-
-            const priceElement = document.createElement('p');
-            priceElement.textContent = gift.price;
-
-            const forElement = document.createElement('p');
-            forElement.textContent = gift.for;
-           
-
-            const buttonsContainer = document.createElement('div'); 
-            buttonsContainer.className = 'buttons-container';
-
-            const changeBtn = document.createElement('button');
-            changeBtn.className = 'change-btn';
-            changeBtn.textContent = 'Change';
-
-            const doneBtn = document.createElement('button');
-            doneBtn.className = 'delete-btn';
-            doneBtn.textContent = 'Delete';
-
-            buttonsContainer.appendChild(changeBtn); 
-            buttonsContainer.appendChild(doneBtn);
-
-            content.appendChild(figtElement);
-            content.appendChild(priceElement);
-            content.appendChild(forElement);
-
-            container.appendChild(content);
-            container.appendChild(buttonsContainer); 
-
-            list.appendChild(container);
-        });
-        attachEventListeners();
-    } catch (err) {
-        console.error(err);
     }
-}
 
-function attachEventListeners() {
-    const changeButtons = document.querySelectorAll('.change-btn');
-    const doneButtons = document.querySelectorAll('.delete-btn');
-
-    changeButtons.forEach((changeButton) => {
-        changeButton.addEventListener('click', (event) => {
-            const taskElement = event.target.closest('.gift-sock');
-            const gift = taskElement.querySelector('p').textContent;
-            const price = taskElement.querySelector('p:nth-child(2)').textContent;
-            const forE = taskElement.querySelector('p:nth-child(3)').textContent;
-            editTask(gift, price, forE);
-            enableEditBtn();
-        });
-    });
+    function addMealToDOM(meal) {
+        if (!meal._id) {
+            console.error('Error: Meal ID is undefined', meal);
+            return;
+        }
+    
+        const mealDiv = document.createElement('div');
+        mealDiv.className = 'meal';
+    
+        const mealTitle = document.createElement('h2');
+        mealTitle.textContent = meal.food;
+    
+        const mealTime = document.createElement('h3');
+        mealTime.textContent = meal.time;
+    
+        const mealCalories = document.createElement('h3');
+        mealCalories.textContent = meal.calories;
+    
+        const buttonsDiv = document.createElement('div');
+        buttonsDiv.id = 'meal-buttons';
+    
+        const changeButton = document.createElement('button');
+        changeButton.className = 'change-meal';
+        changeButton.textContent = 'Change';
+        changeButton.addEventListener('click', () => prepareEdit(meal));
+    
+        const deleteButton = document.createElement('button');
+        deleteButton.className = 'delete-meal';
+        deleteButton.textContent = 'Delete';
+        deleteButton.addEventListener('click', () => deleteMeal(meal._id));
+    
+        buttonsDiv.appendChild(changeButton);
+        buttonsDiv.appendChild(deleteButton);
+    
+        mealDiv.appendChild(mealTitle);
+        mealDiv.appendChild(mealTime);
+        mealDiv.appendChild(mealCalories);
+        mealDiv.appendChild(buttonsDiv);
+    
+        listDiv.appendChild(mealDiv);
+    }
     
 
-    doneButtons.forEach((doneButton) => {
-        doneButton.addEventListener('click', (event) => {
-            const taskElement = event.target.closest('.gift-sock');
-            const gift = taskElement.querySelector('p').textContent;
-            deleteTask(gift);
-        });
-    });
-    
-}
-
-function enableEditBtn() {
-    addBtn.disabled = true;
-    editBtn.disabled = false;
-}
-
-function enableAddBtn() {
-    addBtn.disabled = false;
-    editBtn.disabled = true;
-}
-
-function createTaskEventHandler(ev) {
-    ev.preventDefault();
-    if (giftElement.value !== '' && forElement.value !== '' && priceElement.value !== '') {
-        const headers = {
-            method: 'POST',
-            body: JSON.stringify({
-                gift: giftElement.value,
-                for: forElement.value,
-                price: priceElement.value,
-            }),
+    async function addMeal() {
+        const mealData = {
+            food: foodInput.value,
+            time: timeInput.value,
+            calories: caloriesInput.value
         };
 
-        fetch(BASE_URL, headers)
-            .then(loadBoardEventHandler)
-            .catch(console.error);
-
-        clearAllInputs();
+        try {
+            await fetch(baseURL, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(mealData)
+            });
+            clearInputs();
+            await loadMeals();
+        } catch (error) {
+            console.error('Failed to add meal:', error);
+        }
     }
-}
 
-async function editTask(gift, priceGift, forGift) {
-    selectedTaskId = await getIdByGift(gift);
-    giftElement.value = gift;
-    priceElement.value = priceGift;
-    forElement.value = forGift;
-}
+    async function editMeal() {
+        const updatedMeal = {
+            food: foodInput.value,
+            time: timeInput.value,
+            calories: caloriesInput.value
+        };
 
-function editTaskEventHandler(ev) {
-    ev.preventDefault();
-    const gift = giftElement.value;
-    const data = {
-        gift: giftElement.value,
-        for: forElement.value,
-        price: priceElement.value,
-        _id: selectedTaskId,
-    };
+        try {
+            await fetch(`${baseURL}/${editId}`, {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(updatedMeal)
+            });
+            clearInputs();
+            editId = null;
+            toggleButtons(false);
+            await loadMeals();
+        } catch (error) {
+            console.error('Failed to edit meal:', error);
+        }
+    }
 
-    fetch(endpoints.update(data._id), {
-        method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-        .then(() => {
-            clearAllInputs();
-            loadBoardEventHandler();
-            selectedTaskId = null;
-            enableAddBtn();
-        })
-        .catch(console.error);
-}
+    async function deleteMeal(id) {
+        try {
+            await fetch(`${baseURL}/${id}`, {
+                method: 'DELETE'
+            });
+            await loadMeals();
+        } catch (error) {
+            console.error('Failed to delete meal:', error);
+        }
+    }
 
+    function prepareEdit(meal) {
+        foodInput.value = meal.food;
+        timeInput.value = meal.time;
+        caloriesInput.value = meal.calories;
+        editId = meal._id;
+        toggleButtons(true);
+    }
 
+    function clearInputs() {
+        foodInput.value = '';
+        timeInput.value = '';
+        caloriesInput.value = '';
+    }
 
+    function toggleButtons(isEditing) {
+        editMealBtn.disabled = !isEditing;
+        addMealBtn.disabled = isEditing;
+    }
 
-
-function deleteTask(taskLoacation) {
-    getIdByGift(taskLoacation)
-        .then((id) =>
-            fetch(endpoints.delete(id), {
-                method: 'DELETE',
-                headers: { 'Content-Type': 'application/json' },
-            })
-        )
-        .then(() => {
-            clearAllSections();
-            loadBoardEventHandler();
-            selectedTaskId = null;
-            enableAddBtn();
-        })
-        .catch(console.error);
-}
-
-function clearAllSections() {
-    list.innerHTML = '';
-}
-
-function clearAllInputs() {
-    giftElement.value = '';
-    forElement.value = '';
-    priceElement.value = '';
-}
-
-attachEvents();
